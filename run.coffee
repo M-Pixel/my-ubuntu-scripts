@@ -4,13 +4,18 @@ inquirer = require "inquirer"
 sh = require "execSync"
 chalk = require "chalk"
 
+choices = [
+    { name: "Moka + Faba Icons" }
+]
+    
+for choice in choices
+    choice.checked = true
+
 inquirer.prompt [
     type: "checkbox"
     message: "What would you like to install?"
     name: "thingsToInstall"
-    choices: [
-        { name: "Moka + Faba Icons" }
-    ]
+    choices: choices
 ], (answers) ->
     tti = answers.thingsToInstall
     results = []
