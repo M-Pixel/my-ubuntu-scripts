@@ -1,0 +1,25 @@
+{
+  "name": "my-ubuntu-scripts",
+  "version": "0.0.0",
+  "description": "These are a few of my favorite things...",
+  "main": "index",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "execSync": "^1.0.1-pre",
+    "inquirer": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theqwertman/my-ubuntu-scripts.git"
+  },
+  "author": "Max Pittsley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theqwertman/my-ubuntu-scripts/issues"
+  },
+  "homepage": "https://github.com/theqwertman/my-ubuntu-scripts"
+}
