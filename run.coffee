@@ -6,6 +6,7 @@ chalk = require "chalk"
 
 choices = [
     { name: "Moka + Faba Icons" }
+    { name: "exFAT support" }
 ]
     
 for choice in choices
@@ -24,7 +25,8 @@ inquirer.prompt [
         sh.run "sudo apt-get update"
         sh.run "sudo apt-get install -y moka-icon-theme faba-icon-theme unity-tweak-tool"
         results.push chalk.bgGreen "Activate your new icons through the Unity Tweak Tool"
-        
+    if "exFAT support" in tti
+        sh.run "sudo apt-get install exfat-fuse exfat-utils"
     #
     
     for result in results
